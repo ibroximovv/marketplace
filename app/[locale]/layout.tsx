@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head> 
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/marketplace-logo.svg" />
       </head>
       <body
         className={`${workSans.variable} antialiased`}
