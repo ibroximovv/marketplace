@@ -1,0 +1,16 @@
+{
+    "HeadersContent": {
+        "navItem1": "Bozor",
+        "navItem2": "Ranklar",
+        "navItem3": "Hamyonni ulang",
+        "button": "Ro'yxatdan o'tish"
+    },
+    "HeroContent": {
+        "title": "Raqamli san'atni kashf eting va NFTlarni to'plang",
+        "text": "Figma uchun Anima bilan yaratilgan NFT bozor interfeysi. 20 mingdan ortiq NFT rassomlarining san'atini to'plang",
+        "buttonContent": "Boshlash",
+        "totalSale": "Umumiy sotuv",
+        "auctions": "Auksiyalar",
+        "artists": "Rassomlar"
+    }
+}
