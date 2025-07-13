@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className='bg-[#3B3B3B] py-10'>
       <div className='containers'>
-        <div className='flex justify-between'>
-          <div className='w-[238px]'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-10'>
+          <div className='lg:w-[238px] w-full'>
             <Link className='!mb-[30px] inline-block' href={'/'}>
               <Image priority className='w-[243] h-[32px]' src={'/logo.svg'} alt='sitelogo' width={243} height={32} />
             </Link>
