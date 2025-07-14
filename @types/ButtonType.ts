@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface ButtonType {
     icon?: ReactNode,
-    iconPosition: 'left' | 'right',
+    iconPosition?: 'left' | 'right',
     title: string,
     type: 'submit' | 'button',
     extraClass?: string,
