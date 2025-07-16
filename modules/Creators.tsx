@@ -1,4 +1,5 @@
 "use client"
+
 import { ArtistType } from '@/@types/ArtistsType'
 import { MetaType } from '@/@types/MetaType'
 import { RocketIcon } from '@/assets/icons'
@@ -25,7 +26,7 @@ const Creators: FC<ArtistPageType> = ({ artists }) => {
                     </div>
                     <Button type='button' variant='outlined' icon={<RocketIcon/>} iconPosition='left' title='View Rankings'/>
                 </div>
-                <div className='flex flex-wrap justify-between gap-[30px]'>
+                <div className='cursor-pointer flex flex-wrap justify-between gap-[30px]'>
                     {artistsList?.data.map((item:ArtistType, index:number) => <ArtistsCard key={item.id} item={item} index={index}/>)}
                 </div>
             </div>

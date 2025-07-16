@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from '@/i18n/routing'
 import Layout from "@/provider";
+import { GlobalContext } from "@/context/Context";
 
 const workSans = Work_Sans({
   variable: "--font-work-mono",
@@ -31,16 +32,18 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <head> 
+      <head>
         <link rel="icon" href="/marketplace-logo.svg" />
       </head>
       <body
         className={`${workSans.variable} antialiased`}
       >
         <NextIntlClientProvider >
-          <Layout>
-            {children}
-          </Layout>
+          <GlobalContext>
+            <Layout>
+              {children}
+            </Layout>
+          </GlobalContext>
         </NextIntlClientProvider>
       </body>
     </html>
