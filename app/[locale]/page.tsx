@@ -2,6 +2,9 @@ import Category from "@/modules/Category";
 import Collections from "@/modules/Collection";
 import Creators from "@/modules/Creators";
 import Hero from "@/modules/Hero";
+import Join from "@/modules/Join";
+import Learn from "@/modules/Learn";
+import MagicMashroom from "@/modules/MagicMashroom";
 import NFTMore from "@/modules/NFTMore";
 import { getRequest } from "@/service/getRequest";
 
@@ -19,6 +22,9 @@ export default async function Home() {
       <Creators artists={artists} />
       <Category categories={categories}/>
       <NFTMore nft={nft}/>
+      <MagicMashroom />
+      <Learn />
+      <Join />
     </>
   );
 }
