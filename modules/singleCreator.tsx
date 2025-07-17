@@ -31,7 +31,7 @@ const SingleCreator: FC<{ singleCreateData: ArtistType, id: string }> = ({ singl
     },[])
     return (
         <div>
-            <div style={{ backgroundImage: "url(/single-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className='h-[320px] '></div>
+            <div style={{ backgroundImage: "url(/singleCreatorImg.svg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className='h-[320px] '></div>
             <div className='containers'>
                 <Image className='w-[120px] mt-[-60px] h-[120px] mb-[40px]' src={`${API}/file/${SingleArtist.image}`} alt='Artist img' width={120} height={120} priority />
                 <div className='!mb-[40px] flex justify-between'>
